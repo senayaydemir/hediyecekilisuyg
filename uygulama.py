@@ -8,4 +8,8 @@ def hediye_cekilisi():
     alici_index=random.randint(0,len(alanlar - 1))
     verici_index=random.randint(0,len(verenler - 1))
 
+    while  alanlar[alici_index] == verenler[verici_index]:
+           alici_index=random.randint(0,len(alanlar - 1))
+           verici_index=random.randint(0,len(verenler - 1))
+
     print(alici_index,"Şu kişiye hediye alacak:",verici_index)
